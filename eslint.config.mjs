@@ -15,7 +15,7 @@ export default withNuxt([
       ...eslintConfigPrettier.rules,
       ...eslintPluginPrettierRecommended.rules,
 
-      'no-console': 'error',
+      'no-console': 'warn',
       'vue/multi-word-component-names': 'off',
       'vue/no-multiple-template-root': 'off',
       '@typescript-eslint/ban-ts-comment': 'off',
