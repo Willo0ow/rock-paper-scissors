@@ -1,0 +1,7 @@
+dist
+coverage
+.vscode/settings.json
+.output
+.nuxt
+node_modules
+package-lock.json

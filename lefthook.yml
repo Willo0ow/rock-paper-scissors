@@ -1,0 +1,16 @@
+# EXAMPLE USAGE:
+#
+#   Refer for explanation to following link:
+#   https://github.com/evilmartians/lefthook/blob/master/docs/configuration.md
+#
+pre-commit:
+  parallel: true
+  commands:
+    eslint:
+      glob: '*.{js,ts,jsx,tsx,vue}'
+      run: npm run lint:fix:pre-commit {staged_files}
+    prettier:
+      glob: '*.{js,ts,jsx,tsx,vue,css,scss}'
+      run: |
+        npm run format:fix:pre-commit {staged_files}
+        git add {staged_files}
