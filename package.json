@@ -16,9 +16,11 @@
     "prepare": "lefthook install"
   },
   "dependencies": {
+    "@pinia/nuxt": "^0.7.0",
     "@vueuse/core": "^10.10.0",
     "@vueuse/nuxt": "^10.10.0",
     "nuxt": "^3.14.1592",
+    "pinia": "^2.2.6",
     "vue": "latest",
     "vue-router": "latest"
   },
